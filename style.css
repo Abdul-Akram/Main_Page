@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 40%;
+}
+img{
+    border-radius: 50%;
+    border: 2px solid black;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+li{
+    font-size: 1rem;
+    list-style-type:none;
+}
+li:nth-child(1)::marker{
+    content: " 🤖 ";
+}
+li:nth-child(2)::marker{
+    content: " 👨‍💻 ";
+}
+li:nth-child(3)::marker{
+    content: " 🖥️ ";
+}
+h1{
+    padding: .5rem;
+    font-size: 2.5rem;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .8rem;
+}
+
+@media only screen and (max-width:700px){
+    main{
+        width: 80%;
+    }
+} 
